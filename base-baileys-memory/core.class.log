@@ -1,0 +1,38 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492615463742@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0AC48D2ABA50AA3F36C',
+    participant: undefined
+  },
+  messageTimestamp: 1726442037,
+  pushName: 'franfdz',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5492615463742'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7a611c08-cfec-4092-a831-1bf8bc48014d',
+  keyword: 'key_0901f742-87ae-4262-b30e-91ef6fd22021',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '1ad752661304081171faca378e4f4734'
+}
