@@ -2,10 +2,10 @@
   key: {
     remoteJid: '5492615463742@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0AC48D2ABA50AA3F36C',
+    id: '3EB08ABBB08D5210EB553A',
     participant: undefined
   },
-  messageTimestamp: 1726442037,
+  messageTimestamp: 1726538228,
   pushName: 'franfdz',
   broadcast: false,
   message: Message {
@@ -19,9 +19,27 @@
   from: '5492615463742'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_7a611c08-cfec-4092-a831-1bf8bc48014d',
-  keyword: 'key_0901f742-87ae-4262-b30e-91ef6fd22021',
-  answer: '__call_action__',
+  ref: 'ans_8d0f3ebe-61a7-4451-a800-059ea7383a9b',
+  keyword: 'key_7da42b44-c6eb-4965-a9ab-6f75ee5921c7',
+  answer: 'Hola, para tu turno necesito la siguiente información. Por favor, proporciona estos detalles comenzando tu respuesta con "Acá está la info":\n' +
+    '\n' +
+    '1- Nombre\n' +
+    '2- Ciudad\n' +
+    '3- Idea del tattoo\n' +
+    '4- Foto del lugar de tu cuerpo donde lo querés hacer\n' +
+    '5- Foto de tu idea\n' +
+    '\n' +
+    '🇦🇷\n' +
+    '---\n' +
+    `Hello, for your appointment I need the following information. Please provide these details starting your reply with "Here's the info":\n` +
+    '\n' +
+    '1- Name\n' +
+    '2- City\n' +
+    '3- Tattoo idea\n' +
+    '4- Photo of the body part where you want to get it\n' +
+    '5- Photo of your idea\n' +
+    '\n' +
+    '🇺🇸',
   options: {
     media: null,
     buttons: [],
@@ -32,7 +50,133 @@
     ref: null,
     nested: [],
     keyword: {},
-    callback: true
+    callback: false
   },
-  refSerialize: '1ad752661304081171faca378e4f4734'
+  refSerialize: '54ef9fc4fbead3ac08d57b2c42c8e2f8'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492615463742@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0D6FDDB9CAD1EE11455',
+    participant: undefined
+  },
+  messageTimestamp: 1726538296,
+  pushName: 'franfdz',
+  broadcast: false,
+  message: Message {
+    conversation: 'Aca esta la info\n' +
+      '\n' +
+      '1- Francisco Fernandez\n' +
+      '2- Mendoza\n' +
+      '3- Una serpiente gotica\n' +
+      '4- Brazo\n' +
+      '5- foto de referencia',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Aca esta la info\n' +
+    '\n' +
+    '1- Francisco Fernandez\n' +
+    '2- Mendoza\n' +
+    '3- Una serpiente gotica\n' +
+    '4- Brazo\n' +
+    '5- foto de referencia',
+  from: '5492615463742'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_24ad275b-a18c-4118-b712-a458bf42cd79',
+  keyword: 'key_154f42cb-5080-4d1d-985c-d38c9904d26e',
+  answer: 'Ahora solo esperá a que AYER te responda, asi agendan tu turno! Si necesitas mas info sobre cuidados del tattoo, escribe "cuidados"\n' +
+    '🇦🇷\n' +
+    '---\n' +
+    'Now just wait for AYER to respond to schedule your appointment! If you need more info about tattoo care, write "care"\n' +
+    '🇺🇸',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '76240b3dc68b72b1670b3ba160811ab1'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492615463742@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0D6F3A915C2DCE6FC9D',
+    participant: undefined
+  },
+  messageTimestamp: 1726538312,
+  pushName: 'franfdz',
+  broadcast: false,
+  message: Message {
+    conversation: 'Cuidados',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Cuidados',
+  from: '5492615463742'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_fec61c53-ba12-43ae-9a69-4dd8c4b12d8c',
+  keyword: 'key_e8705fe8-fc50-45a2-af0a-4955e5c4c092',
+  answer: '✨CUIDADOS✨\n' +
+    '🇦🇷\n' +
+    '\n' +
+    '1. Quitar la protección pasadas las 3 h.\n' +
+    '\n' +
+    '2. Lavar el tattoo con agua tibia y jabón de glicerina neutro o uno espechaífico para tattoo (3 veces × día durante 15 días).\n' +
+    '\n' +
+    '3. Secar la zona apoyando una servilleta (no frotar).\n' +
+    '\n' +
+    '4. A las 48 h (antes en caso de notar el tattoo muy seco) comenzar con la aplicación de la crema específica, masajeando hasta que esta se absorba (2 veces x día durante 15 días).\n' +
+    '\n' +
+    'Evitar (durante 15 días):\n' +
+    '- Exposición al sol.\n' +
+    '- Playas, ríos y piletas.\n' +
+    '- Roces fuertes en la zona.\n' +
+    '- Contacto del tattoo con humo, desodorantes y animales.\n' +
+    '\n' +
+    '---\n' +
+    '\n' +
+    '✨CARE✨\n' +
+    '🇺🇸\n' +
+    '\n' +
+    '1. Remove the protection after 3 hours.\n' +
+    '\n' +
+    '2. Wash the tattoo with lukewarm water and neutral glycerin soap or a specific tattoo soap (3 times a day for 15 days).\n' +
+    '\n' +
+    '3. Dry the area by patting with a napkin (do not rub).\n' +
+    '\n' +
+    "4. After 48 hours (or earlier if you notice the tattoo is very dry), start applying the specific cream, massaging until it's absorbed (2 times a day for 15 days).\n" +
+    '\n' +
+    'Avoid (for 15 days):\n' +
+    '- Sun exposure.\n' +
+    '- Beaches, rivers, and pools.\n' +
+    '- Strong friction in the area.\n' +
+    '- Contact of the tattoo with smoke, deodorants, and animals.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '640dc45b36185001788b4102045de82e'
 }

@@ -2,36 +2,38 @@ require("dotenv").config();
 const OpenAI = require("openai");
 
 const openaiApiKey = process.env.OPENAI_API_KEY;
-let tokenCount = 0;  // Variable global para llevar el conteo de tokens
-const TOKEN_LIMIT = 300;  // Límite de tokens
 
-const chat = async (prompt, userMessage) => {
+const chat = async (prompt, userMessages) => {
     try {
-        if (tokenCount >= TOKEN_LIMIT) {
-            return "Límite de tokens alcanzado. No se pueden generar más respuestas.";
-        }
-
         const openai = new OpenAI({
             apiKey: openaiApiKey,
         });
 
+        const messages = [
+            { role: "system", content: prompt },
+            ...userMessages.map(msg => ({ role: "user", content: msg.content }))
+        ];
+
         const completion = await openai.chat.completions.create({
             model: "gpt-3.5-turbo",
-            messages: [
-                { role: "system", content: prompt },
-                { role: "user", content: userMessage }
-            ]
+            messages: messages
         });
 
-        // Sumar tokens utilizados en esta respuesta
-        const tokensUsed = completion.usage.total_tokens;  // Obtener tokens utilizados
-        tokenCount += tokensUsed;
+        // Obtener y mostrar los tokens utilizados en esta respuesta
+        const tokensUsed = completion.usage.total_tokens;
+        console.log(`Tokens usados: ${tokensUsed}`);
 
         const answ = completion.choices[0].message.content;
         return answ;
     } catch (err) {
         console.error("Error al conectar con OpenAI:", err);
-        return `Error, no te quedan tokens`;
+        if (err.response && err.response.status === 402) {
+            return `Error: No tienes suficientes créditos en tu cuenta de OpenAI.`;
+        } else if (err.error && err.error.message) {
+            return `Error: ${err.error.message}`;
+        } else {
+            return `Error: Ha ocurrido un problema con la API de OpenAI. ${err.message}`;
+        }
     }
 };
 
